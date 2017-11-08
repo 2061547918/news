@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteRule ^index.html$ index.php
+RewriteRule ^sort_([0-9]*).html$ sort.php?mid=$1
+RewriteRule ^detail_([0-9]*).html$ detail.php?id=$1
+</IfModule>
